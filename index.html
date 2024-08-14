@@ -1,1 +1,164 @@
-x
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akıner Kısa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-black text-white p-8">
+    <div class="max-w-3xl mx-auto">
+        <div class="flex justify-between items-center mb-8">
+            <h1 class="text-4xl font-bold text-white" id="portfolio">Akıner Kısa</h1>
+            <button id="langToggle" class="bg-white text-black hover:bg-gray-200 font-bold py-2 px-4 rounded transition duration-300">
+                TR
+            </button>
+        </div>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-300" id="about">Hakkımda</h2>
+            <p class="text-white" id="aboutContent">Security Researcher. 19. İletişim: akiner@vulnerability.com.tr</p>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-300" id="links">Linkler</h2>
+            <div class="flex space-x-4">
+                <a href="https://github.com/akinerk" target="_blank" rel="noopener noreferrer" class="bg-white text-black hover:bg-gray-200 font-bold py-2 px-4 rounded transition duration-300">GitHub</a>
+                <a href="https://www.linkedin.com/in/akinerk/" target="_blank" rel="noopener noreferrer"  class="bg-white text-black hover:bg-gray-200 font-bold py-2 px-4 rounded transition duration-300">LinkedIn</a>
+                <a href="https://hackerone.com/k1sec" target="_blank" rel="noopener noreferrer"  class="bg-white text-black hover:bg-gray-200 font-bold py-2 px-4 rounded transition duration-300">Hackerone</a>
+                <a href="https://www.exploit-db.com/?author=10764" target="_blank" rel="noopener noreferrer"  class="bg-white text-black hover:bg-gray-200 font-bold py-2 px-4 rounded transition duration-300">Exploit-db</a>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-300" id="projects">Projeler</h2>
+            <ul class="list-disc list-inside text-white">
+                <li><a href="https://github.com/akinerk/NoMoreForbidden" class="text-white hover:text-gray-300 transition duration-300" id="project1">NoMoreForbidden</a></li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-300" id="blog">Blog - TR</h2>
+            <ul class="list-disc list-inside text-white">
+                <li><a href="https://akiner.medium.com/" class="text-white hover:text-gray-300 transition duration-300" id="blog1">Medium</a></li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-300" id="cves">CVE'ler</h2>
+            <ul class="list-disc list-inside text-white">
+                <li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-31721" class="text-white hover:text-gray-300 transition duration-300" id="cve1">CVE-2021-31721</a></li>
+                <li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-40868" class="text-white hover:text-gray-300 transition duration-300" id="cve2">CVE 2021-40868</a></li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-300" id="education">Eğitim</h2>
+            <ul class="list-disc list-inside text-white">
+                <li id="edu3">Hacettepe Üniversitesi - İletişim Bilimleri - 2024-Şuan</li>
+                <li id="edu2">Anadolu Lisesi - 2020-2024</li>
+                <li id="edu1">Sosyal Bilimler Lisesi - İngilizce Hazırlık - 2019</li>
+            </ul>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-300" id="experience">Deneyim</h2>
+            <ul class="list-disc list-inside text-white">
+                <li id="exp1">Hackerone - Security Researcher - 2020-Şuan
+                    <div class="ml-4" id="exp1desc">
+                        Hackerone üzerinde bağımsız olarak 150'den fazla güvenlik açığı bildirimi sağladım.
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="bg-black text-gray-500 text-sm text-center py-4 mt-8">
+        <p>&copy; 2024 Akıner Kısa / <a href="https://github.com/akinerk/akinerk.github.io">Source</a></p>
+    </footer>
+
+
+    <script>
+        const translations = {
+            tr: {
+                name: "Akıner Kısa",
+                about: "Hakkımda",
+                aboutContent: "Security Researcher. 19. İletişim: akiner@vulnerability.com.tr",
+                links: "Linkler",
+                projects: "Projeler",
+                blog: "Blog - TR",
+                blog1: "Medium",
+                blog1Link: "https://akiner.medium.com/",
+                cves: "CVE'ler",
+                education: "Eğitim",
+                edu3: "Hacettepe Üniversitesi - İletişim Bilimleri - 2024-Şuan",
+                edu2: "Anadolu Lisesi - 2020-2024",
+                edu1: "Sosyal Bilimler Lisesi - İngilizce Hazırlık - 2019",
+                experience: "Deneyim",
+                exp1: "Hackerone - Security Researcher - 2020-Şuan",
+                exp1desc: "Hackerone platformunda bağımsız olarak 150'den fazla güvenlik açığı bildirimi sağladım."
+            },
+            en: {
+                name: "Akıner Kısa",
+                about: "About Me",
+                aboutContent: "Security Researcher. 19. Contact: akiner@vulnerability.com.tr",
+                links: "Links",
+                projects: "Projects",
+                blog: "Blog - EN",
+                blog1: "N/A",
+                blog1Link: "#",
+                cves: "CVE's",
+                education: "Education",
+                edu3: "Hacettepe Üniversitesi - Communication Sciences - 2024-Now",
+                edu2: "Anadolu Lisesi - 2020-2024",
+                edu1: "Sosyal Bilimler Lisesi - English Preparatory - 2019",
+                experience: "Experience", 
+                exp1: "Hackerone - Security Researcher - 2020-Now",
+                exp1desc: "I have reported more than 150 vulnerabilities independently on the Hackerone platform."
+            }
+        };
+
+        let currentLang = 'tr';
+
+        function changeLang(lang) {
+            currentLang = lang;
+            for (let key in translations[lang]) {
+                const element = document.getElementById(key);
+                if (element) {
+                    if (key === 'blog1') {
+                        element.textContent = translations[lang][key];
+                        element.href = translations[lang][key + 'Link'] || '#';
+                        if (lang === 'en') {
+                            element.style.pointerEvents = 'none';
+                            element.style.opacity = '0.5';
+                        } else {
+                            element.style.pointerEvents = 'auto';
+                            element.style.opacity = '1';
+                        }
+                    } else if (key === 'exp1') {
+                        element.childNodes[0].nodeValue = translations[lang][key];
+                        const descElement = element.querySelector('#exp1desc');
+                        if (descElement) {
+                            descElement.textContent = translations[lang]['exp1desc'];
+                        }
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
+                }
+            }
+        }
+
+        document.getElementById('langToggle').addEventListener('click', function() {
+            const newLang = currentLang === 'tr' ? 'en' : 'tr';
+            changeLang(newLang);
+            this.textContent = currentLang.toUpperCase(); 
+        });
+    </script>
+</body>
+</html>
