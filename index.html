@@ -10,6 +10,15 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+        /* Linklerin yatayda kaydırılabilir olması için özel stil */
+        .scrolling-wrapper {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+        }
+        .scrolling-wrapper::-webkit-scrollbar {
+            display: none; /* Kaydırma çubuğunu gizle */
+        }
     </style>
 </head>
 <body class="bg-black text-white p-8">
@@ -28,11 +37,11 @@
         
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-4 text-gray-300" id="links">Linkler</h2>
-            <div class="flex space-x-4">
+            <div class="scrolling-wrapper">
                 <a href="https://github.com/akinerk" target="_blank" rel="noopener noreferrer" class="bg-white text-black hover:bg-gray-200 font-bold py-2 px-4 rounded transition duration-300">GitHub</a>
-                <a href="https://www.linkedin.com/in/akinerk/" target="_blank" rel="noopener noreferrer"  class="bg-white text-black hover:bg-gray-200 font-bold py-2 px-4 rounded transition duration-300">LinkedIn</a>
-                <a href="https://hackerone.com/k1sec" target="_blank" rel="noopener noreferrer"  class="bg-white text-black hover:bg-gray-200 font-bold py-2 px-4 rounded transition duration-300">Hackerone</a>
-                <a href="https://www.exploit-db.com/?author=10764" target="_blank" rel="noopener noreferrer"  class="bg-white text-black hover:bg-gray-200 font-bold py-2 px-4 rounded transition duration-300">Exploit-db</a>
+                <a href="https://www.linkedin.com/in/akinerk/" target="_blank" rel="noopener noreferrer" class="bg-white text-black hover:bg-gray-200 font-bold py-2 px-4 rounded transition duration-300">LinkedIn</a>
+                <a href="https://hackerone.com/k1sec" target="_blank" rel="noopener noreferrer" class="bg-white text-black hover:bg-gray-200 font-bold py-2 px-4 rounded transition duration-300">Hackerone</a>
+                <a href="https://www.exploit-db.com/?author=10764" target="_blank" rel="noopener noreferrer" class="bg-white text-black hover:bg-gray-200 font-bold py-2 px-4 rounded transition duration-300">Exploit-db</a>
             </div>
         </section>
         
