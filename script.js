@@ -396,10 +396,7 @@ async function render() {
   }
 }
 
-window.addEventListener('hashchange', () => {
-  render();
-});
-
+window.addEventListener('hashchange', render);
 window.addEventListener('DOMContentLoaded', () => {
   render();
   updateClock();
