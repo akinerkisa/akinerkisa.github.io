@@ -397,22 +397,11 @@ async function render() {
 }
 
 window.addEventListener('hashchange', () => {
-  render().then(() => {
-    // Route değişimlerinde ana içeriğe odak alarak klavye/k. okuyucu erişilebilirliğini artır.
-    if (view) {
-      view.setAttribute('tabindex', '-1');
-      view.focus({ preventScroll: true });
-    }
-  });
+  render();
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  render().then(() => {
-    if (view) {
-      view.setAttribute('tabindex', '-1');
-      view.focus({ preventScroll: true });
-    }
-  });
+  render();
   updateClock();
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
